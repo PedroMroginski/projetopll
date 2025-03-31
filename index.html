@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Horários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        input, button {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        footer {
+            margin-top: 20px;
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <form id="agendamento-form">
+        <h2>Agendar Horário</h2>
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="tel" id="telefone" placeholder="Número de Celular" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="datetime-local" id="data-horario" required>
+        <button type="submit">Agendar</button>
+    </form>
+
+    <footer>
+        &copy; 2025 Todos os direitos reservados.
+    </footer>
+
+    <script>
+        const horariosOcupados = ["2025-03-18T10:00", "2025-03-19T14:00"];
+        
+        document.getElementById("agendamento-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const dataHorario = document.getElementById("data-horario").value;
+            
+            if (horariosOcupados.includes(dataHorario)) {
+                alert("Horário ocupado! Por favor, escolha outro horário.");
+            } else {
+                alert("Agendado! Aguardamos você.");
+            }
+        });
+    </script>
+</body>
+</html>
