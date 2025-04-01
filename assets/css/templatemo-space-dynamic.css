@@ -722,6 +722,27 @@ header
   .header-area .main-nav .nav {
     display: flex !important;
   }
+
+  @media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+    .service-box {
+        width: 90%;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+    .service-box {
+        width: 90%;
+    }
+}
+
+
 }
 
 /* 
