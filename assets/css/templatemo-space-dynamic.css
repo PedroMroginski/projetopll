@@ -1624,3 +1624,26 @@ responsive
     margin-left: 0px;
   }
 }
+
+@media (max-width: 768px) {
+  .our-portfolio {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-portfolio .hidden-content {
+    padding: 20px; /* Reduz o padding para dar mais espaço em telas pequenas */
+    border-radius: 15px; /* Ajusta o border-radius para um valor mais suave */
+    font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+    top: 10px; /* Ajusta a posição superior para dar mais espaço */
+    width: 90%; /* Garante que o conteúdo ocupe uma largura maior */
+    left: 5%; /* Alinha o conteúdo ao centro */
+    right: 5%; /* Garantir que o conteúdo fique centralizado */
+  }
+}
+
+@media (max-width: 768px) {
+  .our-portfolio .hidden-content p {
+    display: none; /* Esconde o <p> em dispositivos móveis */
+  }
