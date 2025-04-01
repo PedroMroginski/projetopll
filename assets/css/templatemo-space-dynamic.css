@@ -1647,3 +1647,10 @@ responsive
   .our-portfolio .hidden-content p {
     display: none; /* Esconde o <p> em dispositivos móveis */
   }
+
+  .our-portfolio .hidden-content h4 {
+    font-size: 16px; /* Ajusta o tamanho da fonte para caber melhor */
+    padding: 10px; /* Ajuste o padding para evitar que o texto ultrapasse */
+    word-wrap: break-word; /* Permite quebra de palavras no título também */
+  }
+}
