@@ -1108,7 +1108,7 @@ Portfolio
 
 .our-portfolio .section-heading h2 {
   text-align: center;
-  margin: 0px 90px 0px 90px;
+  margin: 0px 90px;
   margin-bottom: 120px;
   position: relative;
   z-index: 1;
@@ -1129,7 +1129,6 @@ Portfolio
 }
 
 .our-portfolio .hidden-content {
-  background: rgb(255,77,30);
   background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
   padding: 30px;
   border-radius: 20px;
@@ -1146,13 +1145,12 @@ Portfolio
   width: 20px;
   height: 20px;
   position: absolute;
-  background: rgb(255,77,30);
+  background: linear-gradient(105deg, rgba(255,52,69,1) 0%, rgba(255,51,78,1) 100%);
   content: '';
   left: 50%;
   bottom: -8px;
   margin-left: -5px;
   transform: rotate(45deg);
-  background: linear-gradient(105deg, rgba(255,52,69,1) 0%, rgba(255,51,78,1) 100%);
   z-index: -1;
 }
 
@@ -1182,6 +1180,33 @@ Portfolio
 .our-portfolio .showed-content img {
   max-width: 100px;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .our-portfolio {
+    padding-top: 60px;
+  }
+  
+  .our-portfolio .section-heading h2 {
+    margin: 0 30px;
+    margin-bottom: 60px;
+    font-size: 24px;
+  }
+  
+  .our-portfolio .hidden-content {
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .our-portfolio .showed-content {
+    padding: 30px;
+  }
+  
+  .our-portfolio .showed-content img {
+    max-width: 80px;
+  }
+}
+
 
 
 /* 
