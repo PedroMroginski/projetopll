@@ -653,6 +653,16 @@ progress {
   margin-bottom: calc(var(--bs-gutter-x) * 3);
   justify-content: space-evenly;
 }
+@media (max-width: 768px) {
+  .row_teste {
+    margin-right: calc(var(--bs-gutter-x) / -1);
+    margin-left: calc(var(--bs-gutter-x) / -1);
+    margin-bottom: calc(var(--bs-gutter-x) * 2); /* Ajuste para a margem inferior */
+    justify-content: center; /* Ajuste no alinhamento para ficar mais organizado em telas pequenas */
+    padding-top: 50px;
+  }
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
